@@ -1,8 +1,14 @@
-package entities;
+package view;
 
 import java.util.List;
 import java.util.Scanner;
 import java.util.Stack;
+
+import controller.Command;
+import models.Card;
+import models.Deck;
+import models.Score;
+import models.Tableau;
 
 public class View {
 	

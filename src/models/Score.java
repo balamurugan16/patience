@@ -1,4 +1,6 @@
-package entities;
+package models;
+
+import controller.Command;
 
 public class Score {
 	

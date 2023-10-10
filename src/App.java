@@ -1,4 +1,6 @@
-import entities.*;
+import controller.Command;
+import models.*;
+import view.View;
 
 public class App {
     public static void main(String... args) {

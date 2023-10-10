@@ -1,4 +1,4 @@
-package entities;
+package models;
 
 import java.util.Collections;
 import java.util.Stack;

@@ -1,4 +1,4 @@
-package entities;
+package controller;
 
 import utils.CommandType;
 

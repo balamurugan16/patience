@@ -1,9 +1,10 @@
-package entities;
+package models;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
+import controller.Command;
 import utils.Suit;
 import utils.Value;
 
