@@ -2,21 +2,21 @@ package models;
 
 import utils.DisplayColor;
 import utils.Suit;
-import utils.Value;
+import utils.Rank;
 
 public class Card {
 	
 	private Suit suit;
-	private Value value;
+	private Rank value;
 	private boolean isFaceUp;
 	
 	public Card () {
 		suit = Suit.HEART;
-		value = Value.QUEEN;
+		value = Rank.QUEEN;
 		isFaceUp = true;
 	}
 	
-	Card (Suit suit, Value value, boolean faceUp) {
+	Card (Suit suit, Rank value, boolean faceUp) {
 		this.suit = suit;
 		this.value = value;
 		this.isFaceUp = faceUp;
@@ -42,7 +42,7 @@ public class Card {
 		return suit;
 	}
 	
-	public Value getValue() {
+	public Rank getValue() {
 		return value;
 	}
 	

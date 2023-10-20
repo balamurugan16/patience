@@ -30,7 +30,7 @@ public class Score {
 		numberOfTurns++;
 	}
 	
-	public void movePlayed (Command command, Tableau board) {
+	public void movePlayed (Command command, Board board) {
 		numberOfTurns++;
 		if (command.isMoveFromPile() && command.isMoveToLane()) {
 			score += CARD_PILE_TO_LANE;

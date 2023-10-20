@@ -1,6 +1,6 @@
 package utils;
 
-public enum Value {
+public enum Rank {
   ACE("A "),
 	TWO("2 "),
 	THREE("3 "),
@@ -17,7 +17,7 @@ public enum Value {
 
   private String symbol;
 
-  Value(String symbol) {
+  Rank(String symbol) {
     this.symbol = symbol;
   }
 

@@ -4,7 +4,7 @@ import view.View;
 
 public class App {
     public static void main(String... args) {
-        Tableau board = new Tableau();
+        Board board = new Board();
         Score scoreboard = new Score();
         View view = new View();
         view.displayWelcome();

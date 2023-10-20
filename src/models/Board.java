@@ -6,12 +6,12 @@ import java.util.Stack;
 
 import controller.Command;
 import utils.Suit;
-import utils.Value;
+import utils.Rank;
 
-public class Tableau {
+public class Board {
   public static final int NUM_LANES = 7;
   public static final int NUM_SUITS = Suit.values().length;
-  public static final int SUIT_SIZE = Value.values().length;
+  public static final int SUIT_SIZE = Rank.values().length;
 
   private Deck deck;
   private Stack<Card> pile;
@@ -19,7 +19,7 @@ public class Tableau {
   private ArrayList<Stack<Card>> suits;
   private boolean wasCardReveal;
 
-  public Tableau() {
+  public Board() {
     deck = new Deck();
     deck.shuffle();
 

@@ -4,13 +4,13 @@ import java.util.Collections;
 import java.util.Stack;
 
 import utils.Suit;
-import utils.Value;
+import utils.Rank;
 
 public class Deck extends Stack<Card> {
 	public Deck () {
 		super();
 		for (Suit suit : Suit.values()) {
-			for (Value cardValue : Value.values()) {
+			for (Rank cardValue : Rank.values()) {
 				super.add(new Card(suit, cardValue, false));
 			}
 		}

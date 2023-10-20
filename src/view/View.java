@@ -8,7 +8,7 @@ import controller.Command;
 import models.Card;
 import models.Deck;
 import models.Score;
-import models.Tableau;
+import models.Board;
 
 public class View {
 	
@@ -29,7 +29,7 @@ public class View {
 		System.out.println("                Score " + scoreboard.getScore() + "    Turns " + scoreboard.getNumberOfTurns());
 	}
 	
-	public void displayBoard(Tableau tableau) {
+	public void displayBoard(Board tableau) {
 		int numberRows = Math.max(tableau.maxLaneSize(),2);
 		for (int row=0; row<numberRows; row++) {
 			if (row==0) {
@@ -50,7 +50,7 @@ public class View {
 				System.out.print(BLANK);
 			}
 			System.out.print(BLANK);
-			for (int laneIndex=0; laneIndex<Tableau.NUM_LANES; laneIndex++) {
+			for (int laneIndex=0; laneIndex<Board.NUM_LANES; laneIndex++) {
 				List<Card> lane = tableau.getLane(laneIndex);
 				if (row > lane.size()-1) {
 					System.out.print(BLANK);
@@ -60,7 +60,7 @@ public class View {
 				System.out.print(BLANK);
 			}
 			if (row==0) {
-				for (int suitIndex=0; suitIndex<Tableau.NUM_SUITS; suitIndex++) {
+				for (int suitIndex=0; suitIndex<Board.NUM_SUITS; suitIndex++) {
 					Stack<Card> suit = tableau.getSuit(suitIndex);
 					if (suit.isEmpty()) {
 						System.out.print(BLANK);
